@@ -48,7 +48,7 @@ export default function ProjectsSection() {
       demoLink: "https://github.com/LeoV0/Application-Film",
       demoUrl: "https://leov0.github.io/Application-Film/",
       stacks: ["HTML", "CSS", "JavaScript"],
-      informations: ["Projet solo", "Durée : 1 heures"],
+      informations: ["Projet solo", "Durée : 1 heure"],
     },
     {
       title: "Restaurant Georgia",
