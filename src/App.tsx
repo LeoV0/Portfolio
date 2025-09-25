@@ -13,7 +13,7 @@ import { FaReact } from "react-icons/fa";
 
 export default function App() {
   const logos: LogoItem[] = [
-    { node: <SiNextdotjs size={40} color="#FFF" />, title: "Next.js" },
+    { node: <SiNextdotjs size={40} color="#AFFF" />, title: "Next.js" },
     { node: <FaReact size={40} color="#61DAFB" />, title: "React" },
     { node: <SiTailwindcss size={40} color="#38BDF8" />, title: "TailwindCSS" },
     { node: <SiTypescript size={40} color="#3178C6" />, title: "TypeScript" },
@@ -23,11 +23,12 @@ export default function App() {
   return (
     <div className="min-h-screen bg-black">
       <Navbar />
-      <main className="pt-32 flex flex-col items-center text-white">
+      <main className="flex flex-col items-center pt-20 text-white">
         {/* Section Intro */}
-        <div id="accueil" className="relative mb-20 w-full h-[600px]">
+        <div id="accueil" className="relative mb-20 w-full h-[70vh]">
           <Orb hoverIntensity={1.3} rotateOnHover={true} hue={0} />
         </div>
+
 
         {/* Boutons GitHub / LinkedIn */}
         <div className="flex gap-6 mb-12">
@@ -35,7 +36,7 @@ export default function App() {
             href="https://github.com/LeoV0"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-6 py-3 rounded-2xl border border-white/20 backdrop-blur-md bg-black/40 text-white font-medium hover:bg-white hover:text-black transition-colors duration-300 shadow-lg"
+            className="flex items-center gap-2 px-6 py-3 font-medium text-white transition-colors duration-300 border shadow-lg rounded-2xl border-white/20 backdrop-blur-md bg-black/40 hover:bg-white hover:text-black"
           >
             <Github size={20} />
             GitHub
@@ -44,7 +45,7 @@ export default function App() {
             href="https://www.linkedin.com/in/l%C3%A9o-gousset/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-6 py-3 rounded-2xl border border-white/20 backdrop-blur-md bg-black/40 text-white font-medium hover:bg-white hover:text-black transition-colors duration-300 shadow-lg"
+            className="flex items-center gap-2 px-6 py-3 font-medium text-white transition-colors duration-300 border shadow-lg rounded-2xl border-white/20 backdrop-blur-md bg-black/40 hover:bg-white hover:text-black"
           >
             <Linkedin size={20} />
             LinkedIn
@@ -67,7 +68,7 @@ export default function App() {
         </div>
 
         {/* Loop Logo */}
-        <div className="w-full flex justify-center mb-20 mt-20">
+        <div className="flex justify-center w-full mt-20 mb-20">
           <LogoLoop
             logos={logos}
             speed={80}

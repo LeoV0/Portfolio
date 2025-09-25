@@ -6,56 +6,65 @@ export default function ProjectsSection() {
       title: "La Meublerie",
       predescription: "Projet de site de vente de meubles en ligne.",
       description:
-        "Projet full-stack, le front utilise Next.js et TailwindCSS pour des interfaces modernes et réactives, tandis que le backend repose sur Spring Boot pour la gestion des produits.",
+        "Projet full-stack avec Next.js et TailwindCSS. J’ai utilisé Shadcn/ui pour la page de connexion/inscription (email + mot de passe). Côté administration, ajout d’un bouton de suppression de meuble directement dans le dashboard. Le backend repose sur Spring Boot pour la gestion des produits.",
       demoLink: "https://github.com/LeoV0/La_Meublerie",
       stacks: ["Next.js", "TailwindCSS", "Spring Boot"],
+      informations: ["Projet en équipe (8 personnes)", "Durée : 4 semaines"],
     },
     {
       title: "Blog",
       predescription: "Création d'un blog avec gestion des utilisateurs.",
       description:
-        "Authentification sécurisée : gestion d’une connexion/déconnexion, profils utilisateurs, modification/suppression du compte. Système d’articles : poster, consulter, liker/unliker des articles.",
+        "Application Django avec authentification sécurisée (connexion/déconnexion, profils, suppression de compte). Réalisation de la page d’accueil via des templates HTML/CSS statiques et écriture de tests de fonctionnalités (par ex. publication d’articles) avec Pytest.",
       demoLink: "https://github.com/LeoV0/microblogging-palm",
       stacks: ["Django", "Pytest", "HTML (Template)", "CSS"],
+      informations: ["Projet en équipe (4 personnes)", "Durée : 2 semaines"],
     },
     {
       title: "Surf App",
       predescription:
-        "Application de spot de surf avec l'utilisation de l'API google maps.",
+        "Application de spot de surf avec l'utilisation de l'API Google Maps.",
       description:
-        "Mobile et web app hybride. Flutter pour l’UI cross-platform. Le backend est fait avec Gin (Go), persistant les spots via GORM. L’intégration Google Maps permet une localisation dynamique des spots favoris des utilisateurs.",
+        "App mobile & web Flutter avec backend Go (framework Gin + GORM). J’ai implémenté la logique de recherche (par nom ou ville) utilisée sur l’accueil, la page recherche et les favoris. Mise en place de l’enregistrement utilisateur et de la logique de la Grid avec bouton retour.",
       demoLink: "https://github.com/LeoV0/SpotSurfApp",
       stacks: ["Flutter", "Dart", "Gin", "GORM"],
+      informations: ["Projet en équipe (4 personnes)", "Durée : 4 semaines"],
     },
     {
       title: "Quiz JavaScript",
       predescription: "Application de quiz sur le développement JavaScript.",
       description:
-        "Application interactive idéale pour tester ses connaissances en JS. Quiz avec questions à choix multiples, score final. Interface simple et responsive, conçue avec HTML, CSS et JavaScript pur.",
+        "Quiz 100 % JavaScript (vanilla) avec progression, score final et timer. Chaque réponse cliquée s’affiche en vert si correcte, en rouge si erronée, puis la bonne réponse est mise en évidence avant de passer à la question suivante au bout de 5 s.",
       demoLink: "https://github.com/LeoV0/Quiz-javascript",
+      demoUrl: "https://leov0.github.io/Quiz-javascript/",
       stacks: ["HTML", "CSS", "JavaScript"],
+      informations: ["Projet solo", "Durée : 2 heures"],
     },
     {
       title: "Application Film",
       predescription: "Application de recherche de films.",
       description:
-        "Recherche de films via l’API OMDB, affichage des résultats avec détails. Fonctionnalités : recherche par titre, affichage des informations clés (année, genre, réalisateur, acteurs, synopsis).",
+        "Intégration de l’API OMDB pour récupérer les infos des films. Barre de recherche permettant d’afficher affiche, description et notes en temps réel grâce à fetch.",
       demoLink: "https://github.com/LeoV0/Application-Film",
+      demoUrl: "https://leov0.github.io/Application-Film/",
       stacks: ["HTML", "CSS", "JavaScript"],
+      informations: ["Projet solo", "Durée : 1 heures"],
     },
     {
       title: "Restaurant Georgia",
       predescription: "Application de réservation de restaurant.",
       description:
-        "Interface simple pour la réservation, adaptation possible pour de vraies données.",
+        "Simple page d’accueil pour un restaurant fictif. Réalisée en HTML et SCSS (main.scss) et prête à être connectée à un backend si besoin.",
       demoLink: "https://github.com/LeoV0/Restaurant-georgia",
-      stacks: ["HTML", "CSS", "JavaScript"],
+      demoUrl: "https://leov0.github.io/Restaurant-georgia/",
+      stacks: ["HTML", "SCSS", "JavaScript"],
+      informations: ["Projet solo", "Durée : 1 semaine"],
     },
   ];
 
   return (
-    <section className="w-full py-24 flex flex-col items-center bg-black text-white">
-      <div className="grid md:grid-cols-3 gap-8 w-full max-w-6xl px-4">
+    <section className="flex flex-col items-center w-full py-24 text-white bg-black">
+      <div className="grid w-full max-w-6xl gap-8 px-4 md:grid-cols-3">
         {projects.map((project) => (
           <ProjectCard key={project.title} {...project} />
         ))}
