@@ -23,15 +23,14 @@ export default function App() {
   return (
     <div className="min-h-screen bg-black">
       <Navbar />
-      <main className="flex flex-col items-center pt-20 text-white">
+      <main className="flex flex-col items-center text-white pt-30">
         {/* Section Intro */}
         <div id="accueil" className="relative mb-20 w-full h-[70vh]">
           <Orb hoverIntensity={1.3} rotateOnHover={true} hue={0} />
         </div>
 
-
         {/* Boutons GitHub / LinkedIn */}
-        <div className="flex gap-6 mb-12">
+        <div className="flex gap-6 mb-20">
           <a
             href="https://github.com/LeoV0"
             target="_blank"
