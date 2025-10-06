@@ -4,7 +4,7 @@ export default function ProjectsSection() {
   const projects = [
     {
       title: "Generative Art",
-      predescription: "Landing Page ",
+      predescription: "Landing Page.",
       description:
         "Ce projet est une œuvre d’art générative interactive réalisée avec JavaScript et Canvas. Génère dynamiquement des formes, lignes, grilles et éléments inspirés du design technique et japonais. Les carrés bleus et autres éléments se déplacent et pulsent de manière fluide, créant un effet vivant et immersif. Optimisé pour une expérience sur ordinateur pour profiter pleinement de tous les effets visuels. Projet personnel démontrant mes compétences en animation, Canvas API, et design génératif.",
       demoLink: "https://github.com/LeoV0/Generative-Art",
