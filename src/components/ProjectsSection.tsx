@@ -26,7 +26,7 @@ export default function ProjectsSection() {
       predescription: "Création d'un blog avec gestion des utilisateurs.",
       description:
         "Application Django avec authentification sécurisée (connexion/déconnexion, profils, suppression de compte). Réalisation de la page d’accueil via des templates HTML/CSS statiques et écriture de tests de fonctionnalités (par ex. publication d’articles) avec Pytest.",
-      demoLink: "https://github.com/LeoV0/microblogging-palm",
+      demoLink: "https://github.com/LeoV0/La_Meublerie_Ecommerce",
       stacks: ["Django", "Pytest", "HTML (Template)", "CSS"],
       informations: ["Projet en équipe (4 personnes)", "Durée : 2 semaines"],
     },
