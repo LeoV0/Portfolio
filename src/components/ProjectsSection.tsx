@@ -3,6 +3,15 @@ import ProjectCard from "./ProjectCard";
 export default function ProjectsSection() {
   const projects = [
     {
+      title: "YumeTrack",
+      predescription: "Projet de suivis des séries animées.",
+      description:
+        "Ce projet permet de suivre facilement la progression de vos séries animées : noter les épisodes vus, ajouter des titres à vos favoris pour les regarder plus tard, ou encore découvrir de nouveaux animes. Le tout est accompagné d’un système de récompenses pour rendre l’expérience plus motivante.",
+      demoLink: "https://github.com/LeoV0/AnimeStats",
+      stacks: ["React", "NestJS", "Prisma"],
+      informations: ["Projet solo", "Durée : En cours"],
+    },
+    {
       title: "Generative Art",
       predescription: "Landing Page.",
       description:
@@ -73,8 +82,8 @@ export default function ProjectsSection() {
   ];
 
   return (
-    <section className="flex flex-col items-center w-full py-24 text-white bg-black">
-      <div className="grid w-full max-w-6xl gap-8 px-4 md:grid-cols-3">
+    <section className="flex flex-col items-center py-24 w-full text-white bg-black">
+      <div className="grid gap-8 px-4 w-full max-w-6xl md:grid-cols-3">
         {projects.map((project) => (
           <ProjectCard key={project.title} {...project} />
         ))}
