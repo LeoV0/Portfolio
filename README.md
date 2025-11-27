@@ -1,73 +1,56 @@
-# React + TypeScript + Vite
+# Portfolio Développeur Front End
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue sur le dépôt de mon portfolio personnel ! Ce projet est une vitrine interactive conçue pour présenter mes compétences, mes projets et mon parcours de manière immersive et moderne.
 
-Currently, two official plugins are available:
+## Stack Technique
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Ce projet est construit avec des technologies web modernes pour assurer performance et fluidité :
 
-## React Compiler
+- **Core** : [React](https://react.dev/) (v19), [TypeScript](https://www.typescriptlang.org/)
+- **Build Tool** : [Vite](https://vitejs.dev/)
+- **Styling** : [Tailwind CSS](https://tailwindcss.com/) (v4)
+- **Animations** :
+  - [Framer Motion](https://www.framer.com/motion/) pour les transitions d'interface
+  - [GSAP](https://gsap.com/) pour les animations complexes
+- **3D & Visuels** :
+  - [Three.js](https://threejs.org/) / [React Three Fiber](https://docs.pmnd.rs/react-three-fiber)
+  - [OGL](https://github.com/oframe/ogl)
+  - [tsparticles](https://particles.js.org/) pour les effets de particules
+- **Icônes** : [Lucide React](https://lucide.dev/), [React Icons](https://react-icons.github.io/react-icons/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Fonctionnalités Clés
 
-## Expanding the ESLint configuration
+- **Design Premium** : Interface utilisateur soignée avec un mode sombre élégant.
+- **Performance** : Optimisé pour un chargement rapide et une navigation fluide.
+- **Responsive** : S'adapte parfaitement aux mobiles, tablettes et bureaux.
+- **Expérience Immersive** : Utilisation d'éléments 3D et d'animations interactives.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Installation et Démarrage
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Pour lancer ce projet localement, suivez ces étapes :
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1.  **Cloner le dépôt** :
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+    ```bash
+    git clone https://github.com/leov0/Portfolio.git
+    cd Portfolio
+    ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2.  **Installer les dépendances** :
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+    ```bash
+    npm install
+    ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+3.  **Lancer le serveur de développement** :
+    ```bash
+    npm run dev
+    ```
+    L'application sera accessible sur `http://localhost:5173`.
+
+## Scripts Disponibles
+
+- `npm run dev` : Lance le serveur de développement.
+- `npm run build` : Compile l'application pour la production.
+- `npm run preview` : Prévisualise la version de production localement.
+- `npm run lint` : Vérifie la qualité du code avec ESLint.
