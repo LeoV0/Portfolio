@@ -67,7 +67,7 @@ export default function ProjectsSection() {
       demoLink: "https://github.com/LeoV0/Application_Film",
       demoUrl: "https://application-film.vercel.app/",
       stacks: ["React", "ViteJS"],
-      informations: ["Projet solo", "Durée : 2 heure"],
+      informations: ["Projet solo", "Durée : 2 heures"],
     },
     {
       title: "Restaurant Georgia",
