@@ -63,11 +63,11 @@ export default function ProjectsSection() {
       title: "Application Film",
       predescription: "Application de recherche de films.",
       description:
-        "Intégration de l’API OMDB pour récupérer les infos des films. Barre de recherche permettant d’afficher affiche, description et notes en temps réel grâce à fetch.",
-      demoLink: "https://github.com/LeoV0/Application-Film",
-      demoUrl: "https://leov0.github.io/Application-Film/",
-      stacks: ["HTML", "CSS", "JavaScript"],
-      informations: ["Projet solo", "Durée : 1 heure"],
+        "Intégration de l’API TMDB pour récupérer les infos des films. Barre de recherche permettant d’afficher affiche, notes en temps réel grâce à fetch.",
+      demoLink: "https://github.com/LeoV0/Application_Film",
+      demoUrl: "https://application-film.vercel.app/",
+      stacks: ["React", "ViteJS"],
+      informations: ["Projet solo", "Durée : 2 heure"],
     },
     {
       title: "Restaurant Georgia",
@@ -82,8 +82,8 @@ export default function ProjectsSection() {
   ];
 
   return (
-    <section className="flex flex-col items-center py-24 w-full text-white bg-black">
-      <div className="grid gap-8 px-4 w-full max-w-6xl md:grid-cols-3">
+    <section className="flex flex-col items-center w-full py-24 text-white bg-black">
+      <div className="grid w-full max-w-6xl gap-8 px-4 md:grid-cols-3">
         {projects.map((project) => (
           <ProjectCard key={project.title} {...project} />
         ))}
