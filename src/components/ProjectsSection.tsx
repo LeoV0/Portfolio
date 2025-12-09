@@ -8,8 +8,10 @@ export default function ProjectsSection() {
       description:
         "Ce projet permet de suivre facilement la progression de vos séries animées : noter les épisodes vus, ajouter des titres à vos favoris pour les regarder plus tard, ou encore découvrir de nouveaux animes. Le tout est accompagné d’un système de récompenses pour rendre l’expérience plus motivante.",
       demoLink: "https://github.com/LeoV0/AnimeStats",
+      demoUrl: "https://yumetrack.netlify.app",
+
       stacks: ["React", "NestJS", "Prisma"],
-      informations: ["Projet solo", "Durée : En cours"],
+      informations: ["Projet solo", "Durée : 2 mois"],
     },
     {
       title: "Generative Art",
